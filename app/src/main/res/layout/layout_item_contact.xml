@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/itemList"
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <RelativeLayout
+            android:id="@+id/relaImgCont"
+            android:layout_width="75dp"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imgContact"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="New Button"
+                android:src="@mipmap/ic_contact"
+                android:background="@mipmap/ic_contact"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/relaButtonAppel"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <ImageButton
+                android:id="@+id/buttonAppel"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="Appeler"
+                android:src="@android:drawable/stat_sys_phone_call"
+                android:background="@android:color/holo_blue_dark"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/relaImgCont"
+            android:layout_toLeftOf="@+id/relaButtonAppel"
+            android:layout_toStartOf="@+id/relaButtonAppel">
+            <TextView
+                android:id="@+id/nomContact"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="Prénom Nom"
+                android:gravity="center"
+                android:textSize="20dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
